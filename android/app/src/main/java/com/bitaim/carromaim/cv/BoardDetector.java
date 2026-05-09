@@ -38,9 +38,6 @@ public class BoardDetector {
     private final Mat gray  = new Mat();
     private final Mat hsv   = new Mat();
 
-    private android.graphics.RectF manualBoardOverride = null;
-    public void setManualBoard(android.graphics.RectF board) { manualBoardOverride = board; }
-    public void clearManualBoard() { manualBoardOverride = null; }
 
     public void setMinRadiusFrac(float v) { minRadiusFrac = Math.max(0.008f, Math.min(v, 0.08f)); }
     public void setMaxRadiusFrac(float v) { maxRadiusFrac = Math.max(0.025f, Math.min(v, 0.15f)); }
